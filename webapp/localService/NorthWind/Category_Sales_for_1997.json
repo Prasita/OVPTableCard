@@ -1,0 +1,71 @@
+[{
+	"CategoryName": "Peripherals",
+	"CategorySales": 70545.3,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%201')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Laptops",
+	"CategorySales": 700232.73,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%202')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Accessories",
+	"CategorySales": 60898.82,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%203')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Mobile",
+	"CategorySales": 400939.77,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%204')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Camera",
+	"CategorySales": 700820.83,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%205')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Tablets",
+	"CategorySales": 70005.44,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%206')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Desktops",
+	"CategorySales": 8000946.78,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%207')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Health Care",
+	"CategorySales": 800293.44,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%208')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Watch",
+	"CategorySales": 100851.45,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%209')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}, {
+	"CategoryName": "Misc",
+	"CategorySales": 400848.51,
+	"__metadata": {
+		"uri": "Category_Sales_for_1997('CategoryName%2010')",
+		"type": "NorthwindModel.Category_Sales_for_1997"
+	}
+}]

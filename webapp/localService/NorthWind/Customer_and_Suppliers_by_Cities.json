@@ -1,0 +1,91 @@
+[{
+	"City": "Bangalore",
+	"CompanyName": "A&T Corp",
+	"ContactName": "Mr. Carol Walter",
+	"Relationship": "Supplier",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%201',Relationship='Relationship%201')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "Delhi",
+	"CompanyName": "DOTC",
+	"ContactName": "Mr. Sandeep Singh",
+	"Relationship": "Customer",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%202',Relationship='Relationship%202')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "Mumbai",
+	"CompanyName": "SSS Engineering",
+	"ContactName": "Ms. Shikha Gurav",
+	"Relationship": "Customer",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%203',Relationship='Relationship%203')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "Kolkata",
+	"CompanyName": "Dey & Co",
+	"ContactName": "Ms. Suparna Dey",
+	"Relationship": "Customer",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%204',Relationship='Relationship%204')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "Chennai",
+	"CompanyName": "United Press",
+	"ContactName": "Mr. A I Syam",
+	"Relationship": "Supplier",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%205',Relationship='Relationship%205')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "City 6",
+	"CompanyName": "CompanyName 6",
+	"ContactName": "ContactName 6",
+	"Relationship": "Relationship 6",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%206',Relationship='Relationship%206')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "City 7",
+	"CompanyName": "CompanyName 7",
+	"ContactName": "ContactName 7",
+	"Relationship": "Relationship 7",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%207',Relationship='Relationship%207')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "City 8",
+	"CompanyName": "CompanyName 8",
+	"ContactName": "ContactName 8",
+	"Relationship": "Relationship 8",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%208',Relationship='Relationship%208')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "City 9",
+	"CompanyName": "CompanyName 9",
+	"ContactName": "ContactName 9",
+	"Relationship": "Relationship 9",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%209',Relationship='Relationship%209')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}, {
+	"City": "City 10",
+	"CompanyName": "CompanyName 10",
+	"ContactName": "ContactName 10",
+	"Relationship": "Relationship 10",
+	"__metadata": {
+		"uri": "Customer_and_Suppliers_by_Cities(CompanyName='CompanyName%2010',Relationship='Relationship%2010')",
+		"type": "NorthwindModel.Customer_and_Suppliers_by_City"
+	}
+}]

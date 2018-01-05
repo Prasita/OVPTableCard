@@ -1,0 +1,110 @@
+{
+	"_version": "1.7.0",
+	"start_url": "start.html",
+	"sap.app": {
+		"id": "Test.OVPTest",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "${project.version}"
+		},
+		"title": "{{app_title}}",
+		"description": "{{app_description}}",
+		"ach": "sap",
+		"resources": "resources.json",
+		"dataSources": {
+			"NorthWind": {
+				"uri": "/northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/NorthWind/metadata.xml",
+					"annotations": [
+						"annotation0"
+					]
+				}
+			},
+			"annotation0": {
+				"type": "ODataAnnotation",
+				"uri": "localService/NorthWind/annotation0.xml",
+				"settings": {
+					"localUri": "localService/NorthWind/annotation0.xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "OVP.cardtemplate",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "${sap.ui5.dist.version}",
+			"libs": {
+				"sap.ovp": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"@i18n": {
+				"preload": true,
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"NorthWind": {
+				"dataSource": "NorthWind",
+				"settings": {
+					"defaultCountMode": "Inline"
+				}
+			}
+		},
+		"extends": {
+			"extensions": {}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+	"sap.ovp": {
+		"globalFilterModel": "NorthWind",
+		"globalFilterEntityType": "Category",
+		"cards": {
+			"Test_OVPTest_card01": {
+				"model": "NorthWind",
+				"template": "sap.ovp.cards.table",
+				"settings": {
+					"title": "{{Test_OVPTest_card01_title}}",
+					"entitySet": "Customer_and_Suppliers_by_Cities",
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+				}
+			},
+			"Test_OVPTest_card02": {
+				"model": "NorthWind",
+				"template": "sap.ovp.cards.table",
+				"settings": {
+					"title": "{{Test_OVPTest_card02_title}}",
+					"entitySet": "Category_Sales_for_1997",
+					"addODataSelect": false,
+					"annotationPath": "com.sap.vocabularies.UI.v1.LineItem"
+				}
+			}
+		}
+	}
+}

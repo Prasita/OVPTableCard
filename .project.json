@@ -1,0 +1,43 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori"
+  ],
+  "generation": [
+    {
+      "templateId": "OVP.smartovptemplate",
+      "templateVersion": "1.41.1",
+      "dateTimeStamp": "Fri, 22 Dec 2017 09:18:25 GMT"
+    },
+    {
+      "templateId": "OVP.cardtemplate",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Wed, 03 Jan 2018 05:55:48 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/northwind/V2/Northwind/Northwind.svc",
+    "metadataFilePath": "localService/NorthWind/metadata.xml",
+    "loadJSONFiles": true,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  }
+}

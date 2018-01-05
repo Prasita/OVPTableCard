@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Copyright (c) 2015 SAP AG, All Rights Reserved -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Northwind App</title>
+
+	<!-- Bootstrap the unified shell in sandbox mode for standalone usage.
+
+         The renderer is specified in the global Unified Shell configuration object "sap-ushell-config".
+
+         The fiori2 renderer will render the shell header allowing, for instance,
+         testing of additional application setting buttons.
+
+         The navigation target resolution service is configured in a way that the empty URL hash is
+         resolved to our own application.
+
+         This example uses relative path references for the SAPUI5 resources and test-resources;
+         it might be necessary to adapt them depending on the target runtime platform.
+         The sandbox platform is restricted to development or demo use cases and must NOT be used
+         for productive scenarios.
+    -->
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer : "fiori2",
+			renderers: {
+				fiori2: {
+					componentData: {
+						config: {
+							rootIntent: "OVP-display",
+							search: "hidden"
+						}
+					}
+				}
+			},
+			applications: {
+				"OVP-display": {
+					"additionalInformation": "SAPUI5.Component=Test.OVPTest",
+					"applicationType": "URL",
+					"url": "../"
+				}
+			}
+		};
+	</script>
+
+        <script src="/test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+	
+
+	<!-- Bootstrap the UI5 core library -->
+	<script id="sap-ui-bootstrap" src="/resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ushell" data-sap-ui-theme="sap_belize" data-sap-ui-compatversion="edge" data-sap-ui-resourceroots="{&quot;Test.OVPTest&quot;: &quot;../&quot;}" data-sap-ui-frameoptions="allow"> // NON-SECURE setting for testing environment
+	</script>
+	
+<script>
+var bRunWithMock = true;
+var sRunWithMock = jQuery.sap.getUriParameters().get('run-with-mock');
+if (sRunWithMock === 'false') {
+bRunWithMock = false;
+}
+if (bRunWithMock) {
+jQuery.sap.require('sap.ui.core.util.MockServer');
+var uri = '/northwind/V2/Northwind/Northwind.svc/';
+var oMock = new sap.ui.core.util.MockServer({rootUri : uri});
+var _sAppModulePath = "Test.OVPTest/";
+var sMetadataPath = "localService/NorthWind/metadata.xml";
+var sMetadataUrl = jQuery.sap.getModulePath(_sAppModulePath + sMetadataPath.replace(".xml", ""), ".xml");
+oMock.simulate(sMetadataUrl);
+oMock.start();
+	jQuery(document).ready(function($) {  sap.m.MessageToast.show('Running in demo mode with mock data.', {  duration : 4000 });
+});
+new sap.ui.core.util.MockServer({rootUri: "localService/NorthWind/annotation0.xml", requests: [{ method: "GET", path: new RegExp(""),
+response: function(oXhr) { 
+jQuery.sap.require("jquery.sap.xml");
+var oAnnotations = jQuery.sap.sjax({ url: jQuery.sap.getModulePath(_sAppModulePath + "localService/NorthWind/annotation0.xml".replace(".xml", ""), ".xml"),
+dataType: "xml"}).data;
+oXhr.respondXML(200, {}, jQuery.sap.serializeXML(oAnnotations));
+return true;
+}
+}]
+}).start();
+//Fake LREP
+jQuery.sap.require("sap.ui.fl.FakeLrepConnector");
+sap.ui.fl.FakeLrepConnector.enableFakeConnector("fakeLRep.json");
+}
+</script>
+
+
+
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+			sap.ushell.Container.createRenderer().placeAt("content");
+		});
+	</script>
+
+</head>
+
+<!-- UI Content -->
+<body class="sapUiBody" id="content">
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "run": [
+    {
+      "filePath": "/OVPTableCard/webapp/test/testOVPwithMock.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "backendSystem": [],
+      "_metadata": {
+        "runnerId": "qunitrunner",
+        "id": 3520160,
+        "displayName": "Run testOVPwithMock.html",
+        "lastRunTimeStamp": 1514971266655
+      }
+    }
+  ]
+}
