@@ -24,6 +24,14 @@
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm">
 			<Annotations Target="NorthwindModel.Category"/>
 			<Annotations Target="NorthwindModel.Customer_and_Suppliers_by_City">
+				<Annotation Term="UI.Identification">
+					<Collection>
+						<Record Type="UI.DataFieldWithUrl">
+							<PropertyValue Property="Url" String="www.google.com"/>
+							<PropertyValue Property="Value" Path="City"/>
+						</Record>
+					</Collection>
+				</Annotation>
 				<Annotation Term="UI.LineItem">
 					<Collection>
 						<Record Type="UI.DataField">
